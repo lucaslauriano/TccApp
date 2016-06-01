@@ -1,0 +1,35 @@
+<ion-view view-title="Profile">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <div class="hero slide-up" style="background-image: url('img/perfil5.jpg');">
+            <div class="content">
+                <div class="avatar" style="background-image: url('img/02.png');"></div>
+                <h3><a class="dark">Nome de Usuario</a></h3>
+                <h4><a class="dark">usuario@email.com</a></h4>
+            </div>
+        </div>
+        <div class="tabs tabs-dark tabs-icon-top static">
+            <!--             <a ui-sref="app.activity" class="tab-item">
+                <i class="icon ion-arrow-graph-up-right"></i> Atividades
+            </a> -->
+            <a ui-sref="app.map" class="tab-item">
+                <i class="icon ion-android-map"></i> Mapa
+            </a>
+            <a ui-sref="app.schedulles" class="tab-item">
+                <i class="icon ion-clock"></i> Horarios
+            </a>
+        </div>
+        <div class="spacer" style=" height: 100px;"></div>
+        <div class="list card">
+            <a href="#" class="item item-icon-left">
+                <i class="icon ion-person"></i> Nome de Usuário
+            </a>
+            <a href="#" class="item item-icon-left">
+                <i class="icon ion-ios-telephone"></i> (99) 9999-9999
+            </a>
+            <a href="#" class="item item-icon-left">
+                <i class="icon ion-male"></i> Masculino
+            </a>
+            
+        </div>
+    </ion-content>
+</ion-view>

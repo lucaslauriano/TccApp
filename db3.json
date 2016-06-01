@@ -1,0 +1,58 @@
+{
+  "station" : {
+    "centro_pi" : {
+      "latitude" : -21.01,
+      "longitude" : -21.01
+    },
+    "centro_prop" : {
+      "latitude" : -21.01,
+      "longitude" : -21.01
+    },
+    "pin_centro" : {
+      "latitude" : -21.01,
+      "longitude" : -21.01
+    },
+    "prop_centro" : {
+      "latitude" : -21.01,
+      "longitude" : -21.01
+    }
+  },
+  "users" : [ {
+    "email" : "lucas@gmail.com",
+    "id" : "1",
+    "name" : "Lucas Lauriano de Souza",
+    "password" : 123456
+  }, {
+    "email" : "mateus@gmail.com",
+    "id" : "2",
+    "name" : "Mateus Custódio",
+    "password" : 456852
+  }, {
+    "email" : "roger@gmail.com",
+    "id" : "3",
+    "name" : "Roger Mizeski",
+    "password" : 123456
+  }, {
+    "email" : "cristiano@gmail.com",
+    "id" : "4",
+    "name" : "Crisitiano Salomão",
+    "password" : 123456
+  }, {
+    "email" : "muriel@gmail.com",
+    "id" : "5",
+    "name" : "Muriel de Fátima",
+    "password" : 123456
+  } ],
+  "way" : {
+    "pinheiro" : {
+      "domingo" : [ "00:00", "05:00" ],
+      "sabado" : [ "00:00", "05:00" ],
+      "semana" : [ "00:00", "05:00" ]
+    },
+    "prospera" : {
+      "domingo" : [ "00:00", "05:00" ],
+      "sabado" : [ "00:00", "05:00" ],
+      "semana" : [ "00:00", "05:00" ]
+    }
+  }
+}

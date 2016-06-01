@@ -1,0 +1,62 @@
+<ion-view view-title="Cadastro">
+        <ion-nav-bar class="bar-transp" 
+                     ng-class="{expanded: false, 
+                                'has-header-fab-left': hasHeaderFabLeft, 
+                                'has-header-fab-right': hasHeaderFabRight}" 
+                     align-title="left">
+            <ion-nav-back-button class="no-text">
+            </ion-nav-back-button>
+<!--             <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" 
+                        menu-toggle="left">
+                </button>
+            </ion-nav-buttons> -->
+
+        </ion-nav-bar>
+    <ion-content style="background: url(img/perfil5.jpg) center; background-size: cover;">
+        <div class="hero  flat">
+            <div class="content">
+                <h1 class="titles">Cadastro</h1>
+            </div>
+        </div>
+        <div class="card testes">
+            <div class="item item-text-wrap">
+                <form class="list">
+                    <ion-list>
+                        <label class="item item-input">
+                            <span class="input-label">Nome</span>
+                            <input type="text" placeholder="">
+                        </label>
+                        <label class="item item-input">
+                            <span class="input-label">E-mail</span>
+                            <input type="text" placeholder="">
+                        </label>
+                        <label class="item item-input">
+                            <span class="input-label">Telefone</span>
+                            <input type="text" placeholder="">
+                        </label>
+                        <label class="item item-input item-select">
+                        <div class="input-label">
+                            Sexo
+                        </div>
+                        <select id="sexo">
+                            <option class="input-label" selected>MASCULINO</option>
+                            <option class="input-label" >FEMININO</option>
+                        </select>
+                    </label>
+                    </ion-list>
+                    <div class="spacer" style="width: 300px; height: 34px;"></div>
+                    <label class="item item-input" 
+                           name="senha">
+                           <span class="input-label">Senha</span>
+                        <input type="password">
+                    </label>
+                    <a ui-sref="app.perfil" 
+                       id="signup"
+                       ng-click="signupEmail()" 
+                       class="button button-block button-calm ink">Registrar-se</a>
+                </form>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

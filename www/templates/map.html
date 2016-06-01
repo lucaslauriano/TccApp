@@ -1,0 +1,16 @@
+<ion-view view-title="Mapa">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <div id="map" data-tap-disabled="true">
+        </div>
+        
+    </ion-content>
+</ion-view>
+<nav mfb-menu position="bl" 
+	 effect="slidein-spring" 
+	 label="Direção" 
+	 active-icon="ion-navicon" 
+	 resting-icon="ion-navicon-round" 
+	 toggling-method="click">
+    <button mfb-button ng-click="clickTest()" class="child" icon="ion-location" label="Pinheirinho"></button>
+    <button mfb-button class="child" icon="ion-location" label="Próspera"></button>
+</nav>

@@ -39,40 +39,40 @@
         init();
 
         function init() {
-            $scope.$parent.showHeader();
-            $scope.$parent.clearFabs();
-            $scope.isExpanded = true;
-            $scope.$parent.setExpanded(true);
-            $scope.$parent.setHeaderFab('right');
 
-            
         }
 
+        $scope.$parent.showHeader();
+        $scope.$parent.clearFabs();
+        $scope.isExpanded = true;
+        $scope.$parent.setExpanded(true);
+        $scope.$parent.setHeaderFab('right');
+
         function _centerOnMe() {
-                if (!$scope.map) {
-                    return;
-                }
-
-                $scope.loading = $ionicLoading.show({
-                    content: 'Getting current location...',
-                    showBackdrop: true
-                }).them(function() {
-                    console.log('porra nenhuma');
-                });
-
-                navigator.geolocation.getCurrentPosition(function(pos) {
-                    $scope.map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
-                    $scope.loading.hide();
-                }, function(error) {
-                    alert('Unable to get location: ' + error.message);
-                });
+            if (!$scope.map) {
+                return;
             }
 
-        $timeout(function() {
+            $scope.loading = $ionicLoading.show({
+                content: 'Getting current location...',
+                showBackdrop: true
+            }).them(function() {
+                console.log('porra nenhuma');
+            });
+
+            navigator.geolocation.getCurrentPosition(function(pos) {
+                $scope.map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+                $scope.loading.hide();
+            }, function(error) {
+                alert('Unable to get location: ' + error.message);
+            });
+        }
+
+/*        $timeout(function() {
             ionicMaterialMotion.fadeSlideIn({
                 selector: '.animate-fade-slide-in .item'
             });
-        }, 200);
+        }, 200);*/
 
         // Activate ink for controller
         ionicMaterialInk.displayEffect();
@@ -107,7 +107,7 @@
 
         google.maps.event.addDomListener(window, 'load');
 
-        function _clickTest(){
+        function _clickTest() {
             console.log('Clicado');
         }
 

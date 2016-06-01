@@ -68,7 +68,7 @@
 /* COLORS ----------------------------*/
 
 // the main/primary color
-$main-color: #403D3E !default;
+$main-color: #E40A5D !default;
 // button colors
 $button-text-color: #f1f1f1;
 $button-box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28) !default;
@@ -190,7 +190,7 @@ $number-of-child-buttons: 4 !default;
 \*------------------------------------*/
 
 %mfb-component__button{
-  background-color: $main-color  ;
+  background-color: $main-color;
   display: inline-block;
   position: relative;
   border: none;

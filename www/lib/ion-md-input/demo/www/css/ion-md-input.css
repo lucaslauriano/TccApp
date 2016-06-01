@@ -12,7 +12,7 @@
     transform: translate3d(0, -30px, 0) scale(1);
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    color: #fff;
+    color: #444;
     opacity: 0.5;
     transform-origin: 0; }
   .item-md-label input {

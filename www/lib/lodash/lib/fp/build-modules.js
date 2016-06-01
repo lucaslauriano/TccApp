@@ -97,8 +97,7 @@ function build(target) {
   _.each([mapping.aliasToReal, mapping.remap], function(data) {
     _.forOwn(data, function(realName, alias) {
       var modulePath = path.join(target, alias + '.js');
-      if (!_.startsWith(alias, '_') &&
-          !_.includes(modulePaths, modulePath)) {
+      if (!_.includes(modulePaths, modulePath)) {
         modulePaths.push(modulePath);
       }
     });
@@ -110,9 +109,10 @@ function build(target) {
   });
 
   actions.unshift(util.copyFile(path.join(__dirname, '../../fp'), fpPath));
+  actions.push(util.writeFile(path.join(fpPath, '_falseOptions.js'), template._falseOptions()));
+  actions.push(util.writeFile(path.join(fpPath, '_util.js'), template._util()));
   actions.push(util.writeFile(path.join(target, 'fp.js'), template.fp()));
   actions.push(util.writeFile(path.join(fpPath, 'convert.js'), template.convert()));
-  actions.push(util.writeFile(path.join(fpPath, '_util.js'), template._util()));
 
   async.series(actions, onComplete);
 }

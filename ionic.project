@@ -1,4 +1,12 @@
 {
   "name": "TccIonicApp",
-  "app_id": ""
+  "app_id": "03da06c8",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
 }

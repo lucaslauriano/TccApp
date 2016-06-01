@@ -45,6 +45,5 @@
   },
   "_source": "git://github.com/zachsoft/Ionic-Material.git",
   "_target": "~0.4.2",
-  "_originalSource": "ionic-material",
-  "_direct": true
+  "_originalSource": "ionic-material"
 }

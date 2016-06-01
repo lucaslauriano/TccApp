@@ -108,6 +108,7 @@
   top: 0; }
 
 .mfb-component--bl {
+
   left: 0;
   bottom: 0; }
 
@@ -119,7 +120,7 @@
     #BUTTONS | Base
 \*------------------------------------*/
 .mfb-component__button--main, .mfb-component__button--child {
-  background-color: #292728;
+  background-color: #ffc900;
   display: inline-block;
   position: relative;
   border: none;
@@ -131,7 +132,7 @@
   position: relative;
   -webkit-user-drag: none;
   color: #f1f1f1; }
-  
+
 /**
  * This is the unordered list for the list items that contain
  * the child buttons.
@@ -179,7 +180,9 @@
 .mfb-component__button--main {
   height: 56px;
   width: 56px;
-  z-index: 20; }
+  z-index: 20;
+  background-color: #333;
+   }
 
 .mfb-component__button--child {
   height: 56px;

@@ -1,0 +1,64 @@
+<ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-energized" ng-class="{expanded: isExpanded,'has-header-fab-left': hasHeaderFabLeft, 'has-header-fab-left':hasHeaderFabRight}" align-title="left">
+            <!--             <ion-nav-back-button class="no-text">
+            </ion-nav-back-button> -->
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+            <ion-nav-buttons side="right">
+<!--                 <button class="button button-icon 
+                               button-clear 
+                               ion-android-more-vertical"
+                        ng-click="openPopover($event)">
+                </button> -->
+            </ion-nav-buttons>
+            
+        </ion-nav-bar>
+        <ion-nav-view name="fabContent"></ion-nav-view>
+        <ion-nav-view name="menuContent" ng-class="{expanded: isExpanded}"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <ion-header-bar style="background: url('img/bg.png'); 
+                               background-size: cover; " 
+                        class="dark-bg expanded">
+            <span class="avatar" style="background: url('img/bus.png'); 
+                                        background-size: cover;"></span>
+            <h2>Amarelinho</h2>
+        </ion-header-bar>
+        <ion-content class="stable-bg has-expanded-header">
+            <ion-list>
+                <ion-item nav-clear menu-close ui-sref="app.profile">
+                    Perfil
+                </ion-item>
+                <ion-item nav-clear menu-close ui-sref="app.map">
+                    Mapa
+                </ion-item>
+<!--                 <ion-item nav-clear menu-close ui-sref="app.activity">
+                    Atividades
+                </ion-item> -->
+                <ion-item nav-clear menu-close ui-sref="app.schedulles">
+                    Horarios
+                </ion-item>
+<!--                 <ion-item nav-clear menu-close ui-sref="app.users">
+                    Usuarios
+                </ion-item> -->
+                <ion-item nav-clear menu-close ui-sref="app.login">
+                    Sair
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
+
+
+<script id="my-popover.html" type="text/ng-template">
+/*    <ion-popover-view>
+        <ion-header-bar>
+      <h1 class="title">My Popover Title</h1>
+    </ion-header-bar>
+    </ion-popover-view>*/
+</script>
+
+

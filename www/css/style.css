@@ -1,4 +1,16 @@
-/* Empty. Add your own CSS if you like */
+.col {
+    border: solid 1px grey;
+    border-bottom-style: none;
+    border-right-style: none;
+}
+
+.col:last-child {
+    border-right: solid 1px grey;
+}
+
+.row:last-child .col {
+    border-bottom: solid 1px grey;
+}
 
 html,
 body {
@@ -8,23 +20,53 @@ body {
 }
 
 #map {
-  width: 100%;
-  height: 100%;
+    height: 100%;
+}
+
+#iw-container .iw-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 10px;
+    background-color: #48b5e9;
+    color: white;
+    margin: 1px;
+    border-radius: 2px 2px 0 0;
+    /* In accordance with the rounding of the default infowindow corners. */
 }
 
 .scroll {
-  height: 100%;
+    height: 100%;
 }
 
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 40%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+
+/* General
+==================================*/
 
 h1 {
     color: #FFC900;
-    text-shadow: 0 1px 0px #000;
+    text-shadow: 2px 2px 2px #555;
     font-size: 42px;
 }
 
+
 /* Utilities
 ==================================*/
+
 .title-bordered {
     border-top: solid 2px #bbb;
     padding-top: 30px;
@@ -42,6 +84,7 @@ p {
 
 /* Menu
 ==================================*/
+
 .menu .bar.bar-header.expanded {
     transition: all .5s ease-in-out;
 }
@@ -82,9 +125,9 @@ p {
 
 .app-icon {
     background-color: #fff;
-    background: url('../img/bus.png') center;
+    background: url('../img/bus.png');
     background-size: cover;
-    border-radius: 50%;
+    border-radius: 250%;
     height: 125px;
     margin: 0 auto;
     width: 125px;
@@ -95,7 +138,95 @@ p {
     bottom: 0;
 }
 
-#ion-md-input {
+.button-outline.button-outline {
+    color: #FFFFFF;
+}
+
+.bar.bar-positive-200 {
+    border-color: #73B0ED;
+    background-color: #73B0ED;
+    background-image: linear-gradient(0deg, #0c60ee, #0c60ee 50%, transparent 50%);
     color: #fff;
 }
 
+.button.button-fab.button-fab-bottom-right.button-positive-200 {
+    background-color: #73B0ED;
+}
+
+.testes {
+    overflow: hidden;
+    margin: 20px 10px;
+    border-radius: 2px;
+    background-color: hsla(0, 1%, 6%, 0.42);
+    opacity: initial;
+}
+
+.input-label {
+    color: #fff;
+}
+
+.hero>.content>.avatar {
+    border: solid 1px rgba(0, 0, 0, 0.8);
+}
+
+.button.button-blue {
+    background-color: rgba(56, 126, 245, 0.49);
+}
+
+.button.button-green {
+    background-color: rgba(51, 205, 95, 0.41);
+}
+
+.bar-transp {
+    background-color: hsla(0, 0%, 0%, 0);
+}
+
+.item-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 14px 48px 16px 16px;
+    max-width: 65%;
+    border: none;
+    background: hsla(0, 0%, 100%, 0);
+    color: #333;
+    text-indent: 0.01px;
+    text-overflow: '';
+    white-space: nowrap;
+    font-size: 14px;
+    cursor: pointer;
+    direction: rtl;
+}
+
+.infowindow {
+    border: none;
+    min-height: 48px;
+    width: 150px;
+    text-align: left;
+}
+.info {
+    position: absolute;
+
+    transform: skewX(22.6deg);
+    transform-origin: 0px 0px 0px;
+    height: 24px;
+    width: 10px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 6px;
+    background-color: rgb(255, 201, 0);
+}
+
+
+.map-icon-label .map-icon {
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 48px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.mfb-component{
+    background-color: #473A3F;}

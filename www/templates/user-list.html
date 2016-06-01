@@ -1,0 +1,19 @@
+
+<ion-view view-title="Usuários">
+    <ion-content ng-class="{expanded:isExpanded}">
+    <div data-tap-disabled="true"></div>
+        <ion-item ui-sref="#/app/profile" 
+                  class="item item-avatar item-icon-right"
+                  collection-repeat="user in users  | orderBy:'user.name'">
+        <div class="list">          
+            <a class="item item-avatar" ui-sref="#">
+                <img src="img/02.png">
+                <h2>{{user.name}}</h2>
+                <p>{{user.email}}</p>
+            </a>
+           </div>
+        </ion-item>
+    </ion-content>
+</ion-view>
+
+   

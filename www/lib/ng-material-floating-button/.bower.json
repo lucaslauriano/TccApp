@@ -43,8 +43,7 @@
     "tag": "v0.6.2",
     "commit": "dd61072d3af56894c439ca7144b50de7a85567fe"
   },
-  "_source": "git://github.com/nobitagit/ng-material-floating-button.git",
+  "_source": "https://github.com/nobitagit/ng-material-floating-button.git",
   "_target": "~0.6.2",
-  "_originalSource": "ng-mfb",
-  "_direct": true
+  "_originalSource": "ng-mfb"
 }
